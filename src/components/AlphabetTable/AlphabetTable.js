@@ -1,10 +1,15 @@
 import React from 'react';
 
-import LetterCard from '../LetterCard/LetterCard';
+import LetterThumbnail from '../LetterThumbnail/LetterThumbnail';
 
 const table = (props) => {
   const cards = props.letters.map(
-    (letter) => <LetterCard letter={ letter } />
+    (letter) => (
+      <LetterThumbnail
+        key={ letter.index }
+        letter={ letter.isolated_form }
+        clicked={ () => props.selectLetter(letter.index) }/>
+    )
   );
 
   return (

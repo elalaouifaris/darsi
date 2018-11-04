@@ -1,12 +1,17 @@
 import React from 'react';
 
-import styles from './LetterThumbnail.module.css';
+import style from './LetterThumbnail.module.css';
 
-const thumbnail = ({ letter, clicked }) => (
+const thumbnail = ({ letter, reading, clicked }) => (
   <div
-    className={ styles.Thumbnail }
+    className={ style.Card }
     onClick={ clicked }>
-      { letter }
+
+    <div className={style.CardInner}>
+      <div className={ style.CardFront }>{ letter }</div>
+      <div className={ style.CardBack }>{ reading }</div>
+    </div>
+
   </div>
 );
 

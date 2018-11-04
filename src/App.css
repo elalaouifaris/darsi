@@ -12,3 +12,7 @@
   --app-grey: var(--silver);
   --app-white: var(--cloud);
 }
+
+* {
+  box-sizing: border-box;
+}

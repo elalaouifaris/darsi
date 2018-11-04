@@ -10,6 +10,7 @@ const table = (props) => {
       <LetterThumbnail
         key={ letter.index }
         letter={ letter.isolated_form }
+        reading={ letter.reading }
         clicked={ () => props.selectLetter(letter.index) }/>
     )
   );

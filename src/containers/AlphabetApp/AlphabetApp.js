@@ -15,6 +15,12 @@ class AlphabetApp extends Component {
     });
   }
 
+  removeSelectionHandler = () => {
+    this.setState({
+      selected_letter_index: null
+    });
+  }
+
   render () {
 
     let selectedLetterCard = null;

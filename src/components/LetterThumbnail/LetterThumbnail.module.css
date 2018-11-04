@@ -1,0 +1,14 @@
+.Thumbnail {
+  margin: 2vw;
+  height: 15vw;
+  width: 15vw;
+
+  font-size: 7vw;
+  color: var(--app-white);
+  background-color: var(--prime-color);
+  box-shadow: 0.5vw 0.5vw 0.5vw var(--second-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

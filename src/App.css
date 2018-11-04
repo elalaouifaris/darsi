@@ -1,32 +1,14 @@
-.App {
-  text-align: center;
-}
+:root {
+  /* Flat UI colors: https://flatuicolors.com/palette/defo */
+  --emerald: #2ecc71;
+  --peter-river: #3498db;
+  --sun-flower: #f1c40f;
+  --amethyst: #9b59b6;
+  --silver: #bdc3c7;
+  --cloud: #ecf0f1;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  --prime-color: var(--peter-river);
+  --second-color: var(--sun-flower);
+  --app-grey: var(--silver);
+  --app-white: var(--cloud);
 }

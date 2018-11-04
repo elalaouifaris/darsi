@@ -1,8 +1,12 @@
 import React from 'react';
 
+import styles from './LetterThumbnail.module.css';
+
 const thumbnail = ({ letter, clicked }) => (
-  <div onClick={ clicked }>
-    { letter }
+  <div
+    className={ styles.Thumbnail }
+    onClick={ clicked }>
+      { letter }
   </div>
 );
 

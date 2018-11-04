@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './AlphabetTable.module.css';
+import style from './AlphabetTable.module.css';
 
 import LetterThumbnail from '../LetterThumbnail/LetterThumbnail';
 
@@ -16,7 +16,7 @@ const table = (props) => {
   );
 
   return (
-    <div className={ styles.Table }>
+    <div className={ style.Table }>
       { cards }
     </div>
   );

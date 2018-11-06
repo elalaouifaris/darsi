@@ -25,7 +25,7 @@ const letterCard = ({ letter }) => {
 
       {/* Letter Shapes Section */  }
       <div className={style.CardRow}>
-        <div className={style.Form}>
+        <div className={style.Word}>
           <div></div>
           <LetterPositionSVG
             text={ first_letter.text }
@@ -34,7 +34,7 @@ const letterCard = ({ letter }) => {
             <p>Au début</p>
         </div>
 
-        <div className={style.Form}>
+        <div className={style.Word}>
           <LetterPositionSVG
             text={ middle_letter.text }
             start={ middle_letter.start }
@@ -42,7 +42,7 @@ const letterCard = ({ letter }) => {
             <p>Au milieu</p>
         </div>
 
-        <div className={style.Form}>
+        <div className={style.Word}>
           <LetterPositionSVG
             text={ last_letter.text }
             start={ last_letter.start }

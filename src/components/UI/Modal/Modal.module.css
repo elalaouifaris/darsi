@@ -1,8 +1,8 @@
 .Modal {
   position: fixed;
   top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
+  left: 10%;
+  width: 80%;
+  height: auto;
   z-index: 3;
 }

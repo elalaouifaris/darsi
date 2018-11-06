@@ -29,7 +29,16 @@
   font-size: 6vw;
 }
 
-.Form svg {
+.Word {
+  width: 100%;
+}
+
+.Word > svg {
   width: 100%;
   height: auto;
+}
+
+.Word p {
+  text-align: center;
+  font-size: 2vw;
 }

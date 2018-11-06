@@ -1,4 +1,6 @@
 .Table {
   display: flex;
   flex-flow: row-reverse;
+
+  padding: 1vw;
 }

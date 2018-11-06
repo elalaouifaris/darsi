@@ -4,6 +4,7 @@
   width: 15vw;
 
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .CardInner {

@@ -1,0 +1,12 @@
+.Text {
+  font-size: 200px;
+  text-anchor: middle;
+}
+
+.Filler {
+  fill: var(--app-grey, #bdc3c7);
+}
+
+.Color {
+  fill: var(--prime-color, #3498db);
+}

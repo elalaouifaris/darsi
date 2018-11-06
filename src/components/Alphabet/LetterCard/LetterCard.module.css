@@ -1,0 +1,35 @@
+.Card {
+  width: 100%;
+  height: 100%;
+
+  color: var(--prime-color);
+  border: 1vw solid var(--prime-color);
+  background-color: var(--app-white);
+}
+
+.CardRow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: baseline;
+
+  padding: 1vw 0;
+}
+
+.CardRow > div {
+  display: inline-block;
+}
+
+.Index,
+.Reading {
+  font-size: 2vw;
+}
+
+.Isolated {
+  font-size: 6vw;
+}
+
+.Form svg {
+  width: 100%;
+  height: auto;
+}

@@ -37,7 +37,6 @@ class AlphabetApp extends Component {
 
     return (
       <div>
-        <h1>حروف الهجاء</h1>
         { selectedLetterCard }
         <AlphabetTable
           letters={ ALPHABET }

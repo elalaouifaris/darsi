@@ -1,6 +1,18 @@
 .Table {
   display: flex;
-  flex-flow: row-reverse;
+  flex-flow: row-reverse wrap;
 
-  padding: 1vw;
+  padding: 2vw;
+}
+
+.Title {
+  text-align: center;
+  font-size: 10vw;
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .Title {
+    font-size: 3vw;
+  }
 }

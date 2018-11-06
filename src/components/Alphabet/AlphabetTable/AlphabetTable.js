@@ -16,9 +16,12 @@ const table = (props) => {
   );
 
   return (
-    <div className={ style.Table }>
+    <>
+      <div className={ style.Title }>حروف الهجاء</div>
+      <div className={ style.Table }>
       { cards }
-    </div>
+      </div>
+    </>
   );
 }
 

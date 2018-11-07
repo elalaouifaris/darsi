@@ -1,7 +1,7 @@
 .Card {
   margin: 2vw;
-  height: 15vw;
-  width: 15vw;
+  height: 25vw;
+  width: 25vw;
 
   perspective: 1000px;
   cursor: pointer;
@@ -23,8 +23,8 @@
   height: 100%;
   backface-visibility: hidden;
 
-  font-size: 7vw;
-  box-shadow: 0.5vw 0.5vw 0.5vw var(--app-grey);
+  font-size: 14vw;
+  box-shadow: 1vw 1vw 1vw var(--app-grey);
 
   display: flex;
   justify-content: center;
@@ -42,7 +42,24 @@
 
 .CardBack {
   color: var(--prime-color);
-  border: 1vw solid var(--prime-color);
+  border: 2vw solid var(--prime-color);
   background-color: var(--app-white);
   transform: rotateY(180deg);
+}
+
+@media (min-width: 500px) {
+  .Card {
+    height: 15vw;
+    width: 15vw;
+  }
+
+  .CardFront,
+  .CardBack {
+    font-size: 7vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw var(--app-grey);
+  }
+
+  .CardBack {
+    border: 1vw solid var(--prime-color);
+  }
 }

@@ -74,7 +74,7 @@ const alphabet = [
     reading: "Tha'",
     letter_highlight: {
       first_letter: {
-        text: "ثبب",
+        text: "تـتـت",
         start: 0,
         end: 25
       },
@@ -99,7 +99,7 @@ const alphabet = [
       first_letter: {
         text: "جبب",
         start: 0,
-        end: 35
+        end: 40
       },
       middle_letter: {
         text: "بجب",
@@ -108,7 +108,122 @@ const alphabet = [
       },
       last_letter: {
         text: "ببج",
-        start: 45,
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 6,
+    isolated_form: "ح",
+    reading: "Hha'",
+    letter_highlight: {
+      first_letter: {
+        text: "حبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بحب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببح",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 7,
+    isolated_form: "خ",
+    reading: "Kha'",
+    letter_highlight: {
+      first_letter: {
+        text: "خبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بخب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببخ",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 8,
+    isolated_form: "د",
+    reading: "Dal",
+    letter_highlight: {
+      first_letter: {
+        text: "دبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بدب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببد",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 9,
+    isolated_form: "ذ",
+    reading: "Dhal",
+    letter_highlight: {
+      first_letter: {
+        text: "ذبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بذب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببذ",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 10,
+    isolated_form: "ر",
+    reading: "Ra'",
+    letter_highlight: {
+      first_letter: {
+        text: "ربب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "برب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببر",
+        start: 50,
         end: 90
       },
     },

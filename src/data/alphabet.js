@@ -94,7 +94,7 @@ const alphabet = [
   {
     index: 5,
     isolated_form: "ج",
-    reading: "Jiim",
+    reading: "Jim",
     letter_highlight: {
       first_letter: {
         text: "جبب",
@@ -255,7 +255,7 @@ const alphabet = [
   {
     index: 12,
     isolated_form: "س",
-    reading: "Siin",
+    reading: "Sin",
     letter_highlight: {
       first_letter: {
         text: "سبب",
@@ -278,7 +278,7 @@ const alphabet = [
   {
     index: 13,
     isolated_form: "ش",
-    reading: "Chiin",
+    reading: "Chin",
     letter_highlight: {
       first_letter: {
         text: "شبب",
@@ -301,7 +301,7 @@ const alphabet = [
   {
     index: 14,
     isolated_form: "ص",
-    reading: "Saad",
+    reading: "Sad",
     letter_highlight: {
       first_letter: {
         text: "صبب",
@@ -324,7 +324,7 @@ const alphabet = [
   {
     index: 15,
     isolated_form: "ض",
-    reading: "Daad",
+    reading: "Dad",
     letter_highlight: {
       first_letter: {
         text: "ضبب",
@@ -347,7 +347,7 @@ const alphabet = [
   {
     index: 16,
     isolated_form: "ط",
-    reading: "Taa'",
+    reading: "Ta'",
     letter_highlight: {
       first_letter: {
         text: "طبب",
@@ -370,7 +370,7 @@ const alphabet = [
   {
     index: 17,
     isolated_form: "ظ",
-    reading: "Dhaa'",
+    reading: "Dha'",
     letter_highlight: {
       first_letter: {
         text: "ظبب",
@@ -439,7 +439,7 @@ const alphabet = [
   {
     index: 20,
     isolated_form: "ف",
-    reading: "Faa'",
+    reading: "Fa'",
     letter_highlight: {
       first_letter: {
         text: "فبب",
@@ -453,6 +453,190 @@ const alphabet = [
       },
       last_letter: {
         text: "ببف",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 21,
+    isolated_form: "ق",
+    reading: "Qhaf",
+    letter_highlight: {
+      first_letter: {
+        text: "قبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بقب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببق",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 22,
+    isolated_form: "ك",
+    reading: "Kaf",
+    letter_highlight: {
+      first_letter: {
+        text: "كبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بكب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببك",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 23,
+    isolated_form: "ل",
+    reading: "Lam",
+    letter_highlight: {
+      first_letter: {
+        text: "لبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بلب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببل",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 24,
+    isolated_form: "م",
+    reading: "mim",
+    letter_highlight: {
+      first_letter: {
+        text: "مبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بمب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببم",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 25,
+    isolated_form: "ن",
+    reading: "noun",
+    letter_highlight: {
+      first_letter: {
+        text: "نبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بنب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببن",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 26,
+    isolated_form: "ه",
+    reading: "Ha'",
+    letter_highlight: {
+      first_letter: {
+        text: "هبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بهب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببه",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 27,
+    isolated_form: "و",
+    reading: "Waw",
+    letter_highlight: {
+      first_letter: {
+        text: "وبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بوب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببو",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 28,
+    isolated_form: "ي",
+    reading: "Ya'",
+    letter_highlight: {
+      first_letter: {
+        text: "يبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بيب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببي",
         start: 50,
         end: 90
       },

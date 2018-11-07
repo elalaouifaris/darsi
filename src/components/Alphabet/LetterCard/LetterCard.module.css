@@ -20,7 +20,7 @@
 
 .Index,
 .Reading {
-  font-size: 6vw;
+  font-size: 10vw;
 }
 
 .Isolated {
@@ -38,7 +38,7 @@
 
 .Word p {
   text-align: center;
-  font-size: 10vw;
+  font-size: 14vw;
 }
 
 @media (min-width: 500px) {
@@ -52,14 +52,14 @@
 
   .Index,
   .Reading {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .Isolated {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   .Word p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }

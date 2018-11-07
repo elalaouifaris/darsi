@@ -23,7 +23,6 @@
   height: 100%;
   backface-visibility: hidden;
 
-  font-size: 14vw;
   box-shadow: 1vw 1vw 1vw var(--app-grey);
 
   display: flex;
@@ -38,12 +37,15 @@
 .CardFront {
   color: var(--app-white);
   background-color: var(--prime-color);
+  font-size: 14vw;
 }
 
 .CardBack {
   color: var(--prime-color);
   border: 2vw solid var(--prime-color);
   background-color: var(--app-white);
+  font-size: 10vw;
+
   transform: rotateY(180deg);
 }
 
@@ -55,11 +57,14 @@
 
   .CardFront,
   .CardBack {
-    font-size: 7vw;
     box-shadow: 0.5vw 0.5vw 0.5vw var(--app-grey);
   }
 
+  .CardFront {
+    font-size: 7vw;
+  }
   .CardBack {
     border: 1vw solid var(--prime-color);
+    font-size: 5vw;
   }
 }

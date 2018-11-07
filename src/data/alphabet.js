@@ -229,6 +229,236 @@ const alphabet = [
     },
   },
 
+  {
+    index: 11,
+    isolated_form: "ز",
+    reading: "Zay",
+    letter_highlight: {
+      first_letter: {
+        text: "زبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بزط",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببز",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 12,
+    isolated_form: "س",
+    reading: "Siin",
+    letter_highlight: {
+      first_letter: {
+        text: "سبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بسب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببس",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 13,
+    isolated_form: "ش",
+    reading: "Chiin",
+    letter_highlight: {
+      first_letter: {
+        text: "شبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بشب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببش",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 14,
+    isolated_form: "ص",
+    reading: "Saad",
+    letter_highlight: {
+      first_letter: {
+        text: "صبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بصب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببص",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 15,
+    isolated_form: "ض",
+    reading: "Daad",
+    letter_highlight: {
+      first_letter: {
+        text: "ضبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بضب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببض",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 16,
+    isolated_form: "ط",
+    reading: "Taa'",
+    letter_highlight: {
+      first_letter: {
+        text: "طبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بطب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببط",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 17,
+    isolated_form: "ظ",
+    reading: "Dhaa'",
+    letter_highlight: {
+      first_letter: {
+        text: "ظبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بظب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببظ",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 18,
+    isolated_form: "ع",
+    reading: "Aayn",
+    letter_highlight: {
+      first_letter: {
+        text: "عبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بعب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببع",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 19,
+    isolated_form: "غ",
+    reading: "Ghayn",
+    letter_highlight: {
+      first_letter: {
+        text: "غبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بغب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببغ",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
+  {
+    index: 20,
+    isolated_form: "ف",
+    reading: "Faa'",
+    letter_highlight: {
+      first_letter: {
+        text: "فبب",
+        start: 0,
+        end: 40
+      },
+      middle_letter: {
+        text: "بفب",
+        start: 20,
+        end: 50
+      },
+      last_letter: {
+        text: "ببف",
+        start: 50,
+        end: 90
+      },
+    },
+  },
+
 ];
 
 export default alphabet;

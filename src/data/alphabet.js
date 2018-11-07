@@ -5,17 +5,17 @@ const alphabet = [
     reading: "Alif",
     letter_highlight: {
       first_letter: {
-        text: "أبب",
+        text: "أسد",
         start: 0,
-        end: 25
+        end: 30
       },
       middle_letter: {
-        text: "بأب",
+        text: "فـأس",
         start: 25,
         end: 45
       },
       last_letter: {
-        text: "ببأ",
+        text: "سبـأ",
         start: 60,
         end: 80
       },
@@ -28,19 +28,19 @@ const alphabet = [
     reading: "Ba'",
     letter_highlight: {
       first_letter: {
-        text: "ببب",
+        text: "بـئر",
         start: 0,
-        end: 25
+        end: 45
       },
       middle_letter: {
-        text: "ببب",
-        start: 25,
-        end: 40
+        text: "كـبـر",
+        start: 45,
+        end: 70
       },
       last_letter: {
-        text: "ببب",
-        start: 40,
-        end: 90
+        text: "كلـب",
+        start: 50,
+        end: 100
       },
     },
   },

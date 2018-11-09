@@ -10,5 +10,5 @@ describe('<Backdrop />', () => {
   it('Should render a div', () => {
     const wrapper = shallow(<Backdrop />);
     expect(wrapper.name()).toBe('div');
-  })
+  });
 });

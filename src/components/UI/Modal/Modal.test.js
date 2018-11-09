@@ -1,5 +1,5 @@
 import React from 'react';
-import { configure, shallow } from 'enzyme';
+import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import Modal from './Modal';
@@ -22,5 +22,29 @@ describe('<Modal/>', () => {
   it('The Modal component has a div', () => {
     const wrapper = shallow(<Modal />);
     expect(wrapper.children().some('div')).toEqual(true);
+  });
+
+  it('The Modal component has a .Modal node containing one element when no chidren are passed', () => {
+    const wrapper = shallow(<Modal />);
+    expect(wrapper.find('.Modal').children()).toHaveLength(1);
+  });
+
+  it('The Modal component passes children in the .Modal container on top of the button div', () => {
+    const modal_with_children = (
+      <Modal>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Modal>
+    );
+    const wrapper = shallow(modal_with_children);
+    expect(wrapper.find('.Modal').children()).toHaveLength(4);
+  });
+
+  it('When the close button is clicked the passed cancel function is called once', () => {
+    const canceled = jest.fn();
+    const wrapper = mount(<Modal cancel={ canceled }/>);
+    wrapper.find('.CloseButton').first().simulate('click');
+    expect(canceled).toBeCalled();
   });
 });

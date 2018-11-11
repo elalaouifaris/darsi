@@ -2,7 +2,7 @@ import React from 'react';
 
 import style from './LetterCard.module.css';
 
-import LetterPositionSVG from '../LetterPositionSVG/LetterPositionSVG';
+import WordContainer from './WordContainer/WordContainer';
 
 const letterCard = ({ letter }) => {
   const {first_letter, middle_letter, last_letter} = letter.letter_highlight;
@@ -25,29 +25,9 @@ const letterCard = ({ letter }) => {
 
       {/* Letter Shapes Section */  }
       <div className={style.CardRow}>
-        <div className={style.Word}>
-          <LetterPositionSVG
-            text={ first_letter.text }
-            start={ first_letter.start }
-            end={ first_letter.end }/>
-          <p>Au début</p>
-        </div>
-
-        <div className={style.Word}>
-          <LetterPositionSVG
-            text={ middle_letter.text }
-            start={ middle_letter.start }
-            end={ middle_letter.end }/>
-          <p>Au milieu</p>
-        </div>
-
-        <div className={style.Word}>
-          <LetterPositionSVG
-            text={ last_letter.text }
-            start={ last_letter.start }
-            end={ last_letter.end }/>
-          <p>A la fin</p>
-        </div>
+        <WordContainer letter={ first_letter } title="Au début" />
+        <WordContainer letter={ middle_letter } title="Au milieu" />
+        <WordContainer letter={ last_letter } title="A la fin" />
       </div>
     </div>
   );

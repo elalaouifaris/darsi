@@ -3,7 +3,7 @@ import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import LetterCard from './LetterCard';
-import LetterPositionSVG from '../LetterPositionSVG/LetterPositionSVG';
+import WordContainer from './WordContainer/WordContainer';
 
 configure({adapter: new Adapter()});
 
@@ -36,8 +36,8 @@ describe('<LetterCard/>', () => {
     wrapper
   });
 
-  it('Component renders 3 LetterPositionSVG elements', () => {
+  it('Component renders 3 WordContainer elements', () => {
     const wrapper = shallow(<LetterCard letter={ letter }/>);
-    expect(wrapper.find(LetterPositionSVG)).toHaveLength(3);
+    expect(wrapper.find(WordContainer)).toHaveLength(3);
   })
 });

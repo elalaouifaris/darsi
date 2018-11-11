@@ -27,20 +27,6 @@
   font-size: 18vw;
 }
 
-.Word {
-  width: 100%;
-}
-
-.Word > svg {
-  width: 100%;
-  height: auto;
-}
-
-.Word p {
-  text-align: center;
-  font-size: 14vw;
-}
-
 @media (min-width: 500px) {
   .CardRow {
     display: flex;
@@ -57,9 +43,5 @@
 
   .Isolated {
     font-size: 8vw;
-  }
-
-  .Word p {
-    font-size: 3vw;
   }
 }

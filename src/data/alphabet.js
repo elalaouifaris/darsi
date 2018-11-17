@@ -122,16 +122,16 @@ const alphabet = [
       first_letter: {
         text: "حبل",
         start: 0,
-        end: 40
+        end: 45
       },
       middle_letter: {
-        text: "الحج",
-        start: 20,
-        end: 50
+        text: "الـحـج",
+        start: 25,
+        end: 60
       },
       last_letter: {
-        text: "بلح",
-        start: 50,
+        text: "بـلـح",
+        start: 45,
         end: 90
       },
     },

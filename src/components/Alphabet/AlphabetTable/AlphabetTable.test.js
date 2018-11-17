@@ -40,14 +40,4 @@ describe('<AlphabetTable/>', () => {
     expect(wrapper.find(LetterThumbnail).first().props())
       .toHaveProperty("reading", letters[0].reading)
   });
-
-  it('when LetterTHumbnail is clicked should call selectedLetter method with corresponding index', () => {
-    const clicked = jest.fn();
-    const wrapper = mount(<AlphabetTable
-      letters={ letters } selectLetter={ clicked }/>);
-    const letter = wrapper.find(LetterThumbnail).first();
-    letter.simulate('click');
-    expect(clicked).toBeCalledWith(letters[0].index);
-
-  });
 });

@@ -1,18 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import style from './LetterThumbnail.module.css';
 
-const thumbnail = ({ letter, reading, clicked }) => (
-  <div
-    className={ style.Card }
-    onClick={ clicked }>
+class Thumbnail extends Component {
+  state = {
+    flipped: false
+  }
 
-    <div className={style.CardInner}>
-      <div className={ style.CardFront }>{ letter }</div>
-      <div className={ style.CardBack }>{ reading }</div>
-    </div>
+  flipHandler = () => {
+    this.setState(
+      (prevState) => ({flipped: !prevState.flipped})
+    );
+  }
 
-  </div>
-);
+  render () {
+    const classes = [style.CardInner, this.state.flipped? style.Flipped: null];
 
-export default thumbnail;
+    return (
+      <div className={ style.Card }  onClick={this.flipHandler} >
+        <div className={ classes.join(' ') }>
+          <div className={ style.CardFront }>
+            { this.props.letter }
+          </div>
+
+          <div className={ style.CardBack }>
+            <div className={ style.CardDetails } onClick={ this.props.clicked }>
+              { this.props.reading }
+            </div>
+          </div>
+        </div>
+
+      </div>
+    );
+  }
+}
+
+export default Thumbnail;

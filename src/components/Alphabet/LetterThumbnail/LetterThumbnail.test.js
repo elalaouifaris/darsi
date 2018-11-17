@@ -9,6 +9,7 @@ configure({adapter: new Adapter()});
 describe('<LetterThumbnail/>', () => {
   it('Component renders without errors', () => {
     const wrapper = shallow(<LetterThumbnail />);
+    // eslint-disable-next-line no-unused-expressions
     wrapper
   });
 
@@ -19,13 +20,13 @@ describe('<LetterThumbnail/>', () => {
 
   it('should render the given reading in .CardBack', () => {
     const wrapper = shallow(<LetterThumbnail reading="Alif"/>);
-    expect(wrapper.find('.CardBack').text()).toEqual("Alif")
+    expect(wrapper.find('.CardBack div').text()).toEqual("Alif")
   });
 
   it('should call given clicked function when .Card is clicked', () => {
     const clicked = jest.fn();
     const wrapper = shallow(<LetterThumbnail clicked={ clicked }/>);
-    wrapper.find('.Card').simulate('click');
+    wrapper.find('.CardBack div').simulate('click');
     expect(clicked).toBeCalled();
   });
 

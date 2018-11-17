@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.Card:hover .CardInner {
+.CardInner.Flipped {
   transform: rotateY(180deg);
 }
 
@@ -47,6 +47,10 @@
   font-size: 10vw;
 
   transform: rotateY(180deg);
+}
+
+.CardDetails:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 500px) {

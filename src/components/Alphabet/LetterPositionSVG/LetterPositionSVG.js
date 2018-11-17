@@ -15,19 +15,20 @@ const letter_position_svg = ({ text, start, end }) => {
   const path_id = guid();
 
   const svg_width = 400;
-  const svg_height = 300;
+  const svg_height = 350;
+  const text_height = 0.7 * svg_height;
   const color_x_start = (100 - end) / 100 * svg_width;
   const color_width = (end - start) / 100 * svg_width;
 
   return (
     <svg  width={ svg_width }
           height={ svg_height }
-          viewBox="0 0 400 300">
+          viewBox={ `0 0 ${svg_width} ${svg_height}` }>
       <defs>
         <clipPath id={ path_id }>
            <text className={ style.Text }
             x={ svg_width / 2 }
-            y={ svg_height * 0.7 }>
+            y={ text_height }>
             { text }
           </text>
         </clipPath>

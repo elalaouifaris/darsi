@@ -9,12 +9,15 @@ const modal = (props) => {
   return (
     <>
       <Backdrop clicked={props.cancel}/>
-      <div className={style.Modal}>
-        <div className={ style.CloseButton }
+      <div className={ style.Modal }>
+        <div className={ style.ModalCloseButton }
           onClick={ props.cancel }>
           <MdClose />
         </div>
-        {props.children}
+
+        <div className={ style.ModalContent }>
+          {props.children}
+        </div>
       </div>
     </>
   );

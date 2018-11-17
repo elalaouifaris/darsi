@@ -24,9 +24,9 @@ describe('<Modal/>', () => {
     expect(wrapper.children().some('div')).toEqual(true);
   });
 
-  it('The Modal component has a .Modal node containing one element when no chidren are passed', () => {
+  it('The Modal component has a .Modal node containing 2 children close button and content', () => {
     const wrapper = shallow(<Modal />);
-    expect(wrapper.find('.Modal').children()).toHaveLength(1);
+    expect(wrapper.find('.Modal').children()).toHaveLength(2);
   });
 
   it('The Modal component passes children in the .Modal container on top of the button div', () => {
@@ -38,13 +38,13 @@ describe('<Modal/>', () => {
       </Modal>
     );
     const wrapper = shallow(modal_with_children);
-    expect(wrapper.find('.Modal').children()).toHaveLength(4);
+    expect(wrapper.find('.ModalContent').children()).toHaveLength(3);
   });
 
   it('When the close button is clicked the passed cancel function is called once', () => {
     const canceled = jest.fn();
     const wrapper = mount(<Modal cancel={ canceled }/>);
-    wrapper.find('.CloseButton').first().simulate('click');
+    wrapper.find('.ModalCloseButton').first().simulate('click');
     expect(canceled).toBeCalled();
   });
 });

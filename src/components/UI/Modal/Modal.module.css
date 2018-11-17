@@ -3,15 +3,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 100vh;
-  overflow: auto;
   z-index: 3;
 }
 
-.CloseButton {
+.ModalContent {
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.ModalCloseButton {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 
   color: var(--prime-color);
   font-size: 10vw;
@@ -20,14 +26,17 @@
 
 @media (min-width: 500px) {
   .Modal {
-    top: 15%;
+    top: 10%;
     left: 10%;
     width: 80%;
-    overflow: auto;
   }
 
-  .CloseButton {
-    font-size: 3vw;
+  .ModalContent {
+    max-height: 80vh;
+  }
+
+  .ModalCloseButton {
+    font-size: 4vw;
     padding: 1.5vw;
   }
 }

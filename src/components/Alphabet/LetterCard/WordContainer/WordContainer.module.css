@@ -1,11 +1,13 @@
 
 .Word {
-  width: 100%;
+  margin: auto;
 }
 
 .Word > svg {
-  width: 100%;
+  width: 60%;
   height: auto;
+  margin: auto;
+  display: block;
 }
 
 .Title {
@@ -15,6 +17,6 @@
 
 @media (min-width: 500px) {
   .Title {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }

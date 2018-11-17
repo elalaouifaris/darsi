@@ -51,17 +51,17 @@ const alphabet = [
     reading: "Ta'",
       letter_highlight: {
         first_letter: {
-          text: "تبب",
+          text: "تـمر",
           start: 0,
-          end: 25
-        },
-        middle_letter: {
-          text: "بتب",
-          start: 25,
           end: 40
         },
+        middle_letter: {
+          text: "كـتب",
+          start: 40,
+          end: 57
+        },
         last_letter: {
-          text: "ببت",
+          text: "بنت",
           start: 40,
           end: 90
         },
@@ -74,18 +74,18 @@ const alphabet = [
     reading: "Tha'",
     letter_highlight: {
       first_letter: {
-        text: "تـتـت",
+        text: "ثـوم",
         start: 0,
-        end: 25
+        end: 35
       },
       middle_letter: {
-        text: "بثب",
-        start: 25,
-        end: 40
+        text: "كـثـير",
+        start: 45,
+        end: 60
       },
       last_letter: {
-        text: "ببث",
-        start: 40,
+        text: "بحـث",
+        start: 50,
         end: 90
       },
     },
@@ -97,19 +97,19 @@ const alphabet = [
     reading: "Jim",
     letter_highlight: {
       first_letter: {
-        text: "جبب",
+        text: "جـمل",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بجب",
-        start: 20,
-        end: 50
+        text: "نـجـم",
+        start: 25,
+        end: 60
       },
       last_letter: {
-        text: "ببج",
-        start: 50,
-        end: 90
+        text: "نسيـج",
+        start: 55,
+        end: 100
       },
     },
   },
@@ -120,17 +120,17 @@ const alphabet = [
     reading: "Hha'",
     letter_highlight: {
       first_letter: {
-        text: "حبب",
+        text: "حبل",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بحب",
+        text: "الحج",
         start: 20,
         end: 50
       },
       last_letter: {
-        text: "ببح",
+        text: "بلح",
         start: 50,
         end: 90
       },

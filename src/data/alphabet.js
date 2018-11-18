@@ -166,18 +166,18 @@ const alphabet = [
     reading: "Dal",
     letter_highlight: {
       first_letter: {
-        text: "دبب",
+        text: "دار",
         start: 0,
-        end: 40
+        end: 45
       },
       middle_letter: {
-        text: "بدب",
-        start: 20,
-        end: 50
+        text: "بـدر",
+        start: 30,
+        end: 60
       },
       last_letter: {
-        text: "ببد",
-        start: 50,
+        text: "بلـد",
+        start: 45,
         end: 90
       },
     },

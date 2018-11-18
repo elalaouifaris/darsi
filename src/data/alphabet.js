@@ -580,18 +580,18 @@ const alphabet = [
     reading: "Ha'",
     letter_highlight: {
       first_letter: {
-        text: "هبب",
+        text: "هـواء",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بهب",
-        start: 20,
-        end: 50
+        text: "سـهـل",
+        start: 35,
+        end: 65
       },
       last_letter: {
-        text: "ببه",
-        start: 50,
+        text: "صـه",
+        start: 55,
         end: 90
       },
     },

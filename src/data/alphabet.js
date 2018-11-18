@@ -465,17 +465,17 @@ const alphabet = [
     reading: "Qhaf",
     letter_highlight: {
       first_letter: {
-        text: "قبب",
+        text: "قـلـم",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بقب",
+        text: "لـقـب",
         start: 20,
-        end: 50
+        end: 45
       },
       last_letter: {
-        text: "ببق",
+        text: "فـلـق",
         start: 50,
         end: 90
       },

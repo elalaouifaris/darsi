@@ -281,19 +281,19 @@ const alphabet = [
     reading: "Chin",
     letter_highlight: {
       first_letter: {
-        text: "شبب",
+        text: "شباب",
         start: 0,
-        end: 40
+        end: 30
       },
       middle_letter: {
-        text: "بشب",
-        start: 20,
-        end: 50
+        text: "خشب",
+        start: 30,
+        end: 60
       },
       last_letter: {
-        text: "ببش",
+        text: "كبش",
         start: 50,
-        end: 90
+        end: 100
       },
     },
   },

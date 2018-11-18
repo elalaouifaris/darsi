@@ -603,18 +603,18 @@ const alphabet = [
     reading: "Waw",
     letter_highlight: {
       first_letter: {
-        text: "وبب",
+        text: "وقت",
         start: 0,
-        end: 40
+        end: 34
       },
       middle_letter: {
-        text: "بوب",
-        start: 20,
-        end: 50
+        text: "نـور",
+        start: 35,
+        end: 61
       },
       last_letter: {
-        text: "ببو",
-        start: 50,
+        text: "الجـو",
+        start: 60,
         end: 90
       },
     },

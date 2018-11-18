@@ -235,18 +235,18 @@ const alphabet = [
     reading: "Zay",
     letter_highlight: {
       first_letter: {
-        text: "زبب",
+        text: "زبيب",
         start: 0,
-        end: 40
+        end: 30
       },
       middle_letter: {
-        text: "بزط",
-        start: 20,
-        end: 50
+        text: "مـنـزل",
+        start: 45,
+        end: 71
       },
       last_letter: {
-        text: "ببز",
-        start: 50,
+        text: "موز",
+        start: 61,
         end: 90
       },
     },

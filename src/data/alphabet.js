@@ -350,18 +350,18 @@ const alphabet = [
     reading: "Ta'",
     letter_highlight: {
       first_letter: {
-        text: "طبب",
+        text: "طـبل",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بطب",
-        start: 20,
-        end: 50
+        text: "بـطـل",
+        start: 25,
+        end: 55
       },
       last_letter: {
-        text: "ببط",
-        start: 50,
+        text: "خـط",
+        start: 48,
         end: 90
       },
     },

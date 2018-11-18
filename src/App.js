@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
+import Menu from './components/Navigation/Menu/Menu';
+import LandingPage from './components/Navigation/LandingPage/LandingPage';
+import AlphabetGame from './containers/AlphabetGame/AlphabetGame';
 import AlphabetApp from './containers/AlphabetApp/AlphabetApp';
 
 class App extends Component {
@@ -9,8 +12,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <>
-          <Route path="/" exact render={() => <h1>Router Testing</h1> } />
-          <Route path="/" component={AlphabetApp} />
+          <Menu />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/game" component={AlphabetGame} />
+          <Route path="/alphabet" component={AlphabetApp} />
         </>
       </BrowserRouter>
     );

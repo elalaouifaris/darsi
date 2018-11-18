@@ -442,19 +442,19 @@ const alphabet = [
     reading: "Fa'",
     letter_highlight: {
       first_letter: {
-        text: "فبب",
+        text: "فـيـل",
         start: 0,
-        end: 40
+        end: 30
       },
       middle_letter: {
-        text: "بفب",
-        start: 20,
-        end: 50
+        text: "مـفـيد",
+        start: 30,
+        end: 55
       },
       last_letter: {
-        text: "ببف",
+        text: "سيـف",
         start: 50,
-        end: 90
+        end: 100
       },
     },
   },

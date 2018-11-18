@@ -488,17 +488,17 @@ const alphabet = [
     reading: "Kaf",
     letter_highlight: {
       first_letter: {
-        text: "كبب",
+        text: "كـتب",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بكب",
-        start: 20,
-        end: 50
+        text: "فـكـرة",
+        start: 25,
+        end: 55
       },
       last_letter: {
-        text: "ببك",
+        text: "سمـك",
         start: 50,
         end: 90
       },

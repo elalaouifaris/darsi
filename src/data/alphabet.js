@@ -327,19 +327,19 @@ const alphabet = [
     reading: "Dad",
     letter_highlight: {
       first_letter: {
-        text: "ضبب",
+        text: "ضوء",
         start: 0,
-        end: 40
+        end: 45
       },
       middle_letter: {
-        text: "بضب",
-        start: 20,
-        end: 50
+        text: "أخضر",
+        start: 46,
+        end: 75
       },
       last_letter: {
-        text: "ببض",
-        start: 50,
-        end: 90
+        text: "بيض",
+        start: 32,
+        end: 100
       },
     },
   },

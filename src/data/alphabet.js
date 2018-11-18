@@ -626,18 +626,18 @@ const alphabet = [
     reading: "Ya'",
     letter_highlight: {
       first_letter: {
-        text: "يبب",
+        text: "يـد",
         start: 0,
-        end: 40
+        end: 45
       },
       middle_letter: {
-        text: "بيب",
+        text: "بـيـت",
         start: 20,
-        end: 50
+        end: 45
       },
       last_letter: {
-        text: "ببي",
-        start: 50,
+        text: "ذكـي",
+        start: 55,
         end: 90
       },
     },

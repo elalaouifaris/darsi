@@ -304,19 +304,19 @@ const alphabet = [
     reading: "Sad",
     letter_highlight: {
       first_letter: {
-        text: "صبب",
+        text: "صباح",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بصب",
-        start: 20,
-        end: 50
+        text: "مصر",
+        start: 30,
+        end: 60
       },
       last_letter: {
-        text: "ببص",
-        start: 50,
-        end: 90
+        text: "فحص",
+        start: 38,
+        end: 100
       },
     },
   },

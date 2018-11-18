@@ -258,19 +258,19 @@ const alphabet = [
     reading: "Sin",
     letter_highlight: {
       first_letter: {
-        text: "سبب",
+        text: "سفر",
         start: 0,
-        end: 40
+        end: 45
       },
       middle_letter: {
-        text: "بسب",
-        start: 20,
-        end: 50
+        text: "مسجد",
+        start: 22,
+        end: 47
       },
       last_letter: {
-        text: "ببس",
-        start: 50,
-        end: 90
+        text: "شمـس",
+        start: 45,
+        end: 100
       },
     },
   },

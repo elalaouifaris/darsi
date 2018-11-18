@@ -143,19 +143,19 @@ const alphabet = [
     reading: "Kha'",
     letter_highlight: {
       first_letter: {
-        text: "خبب",
+        text: "خـبز",
         start: 0,
-        end: 40
-      },
-      middle_letter: {
-        text: "بخب",
-        start: 20,
         end: 50
       },
+      middle_letter: {
+        text: "بـخار",
+        start: 30,
+        end:60
+      },
       last_letter: {
-        text: "ببخ",
-        start: 50,
-        end: 90
+        text: "مريـخ",
+        start: 60,
+        end: 100
       },
     },
   },

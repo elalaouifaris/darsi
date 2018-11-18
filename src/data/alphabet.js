@@ -189,18 +189,18 @@ const alphabet = [
     reading: "Dhal",
     letter_highlight: {
       first_letter: {
-        text: "ذبب",
+        text: "ذئب",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بذب",
+        text: "مذاق",
         start: 20,
         end: 50
       },
       last_letter: {
-        text: "ببذ",
-        start: 50,
+        text: "لذيـذ",
+        start: 60,
         end: 90
       },
     },

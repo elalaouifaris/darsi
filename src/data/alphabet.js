@@ -534,18 +534,18 @@ const alphabet = [
     reading: "mim",
     letter_highlight: {
       first_letter: {
-        text: "مبب",
+        text: "مـطار",
         start: 0,
-        end: 40
+        end: 30
       },
       middle_letter: {
-        text: "بمب",
-        start: 20,
-        end: 50
+        text: "قـمـر",
+        start: 35,
+        end: 65
       },
       last_letter: {
-        text: "ببم",
-        start: 50,
+        text: "قـلـم",
+        start: 60,
         end: 90
       },
     },

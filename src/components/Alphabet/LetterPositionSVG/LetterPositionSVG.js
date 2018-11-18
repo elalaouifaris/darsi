@@ -16,7 +16,7 @@ const letter_position_svg = ({ text, start, end }) => {
 
   const svg_width = 400;
   const svg_height = 350;
-  const text_height = 0.7 * svg_height;
+  const text_height = 0.65 * svg_height;
   const color_x_start = (100 - end) / 100 * svg_width;
   const color_width = (end - start) / 100 * svg_width;
 

@@ -557,18 +557,18 @@ const alphabet = [
     reading: "noun",
     letter_highlight: {
       first_letter: {
-        text: "نبب",
+        text: "نـهـر",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بنب",
+        text: "بـنـت",
         start: 20,
-        end: 50
+        end: 45
       },
       last_letter: {
-        text: "ببن",
-        start: 50,
+        text: "عـيـن",
+        start: 55,
         end: 90
       },
     },

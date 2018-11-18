@@ -396,18 +396,18 @@ const alphabet = [
     reading: "Aayn",
     letter_highlight: {
       first_letter: {
-        text: "عبب",
+        text: "عـنب",
         start: 0,
-        end: 40
+        end: 35
       },
       middle_letter: {
-        text: "بعب",
-        start: 20,
-        end: 50
+        text: "لـعـبة",
+        start: 25,
+        end: 55
       },
       last_letter: {
-        text: "ببع",
-        start: 50,
+        text: "رائــع",
+        start: 55,
         end: 90
       },
     },

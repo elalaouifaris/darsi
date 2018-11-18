@@ -12,7 +12,8 @@
 
 .Title {
   text-align: center;
-  font-size: 14vw;
+  font-size: 10vw;
+  margin: 0;
 }
 
 @media (min-width: 500px) {

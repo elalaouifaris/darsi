@@ -373,17 +373,17 @@ const alphabet = [
     reading: "Dha'",
     letter_highlight: {
       first_letter: {
-        text: "ظبب",
+        text: "ظبـي",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بظب",
-        start: 20,
-        end: 50
+        text: "عظـيم",
+        start: 30,
+        end: 60
       },
       last_letter: {
-        text: "ببظ",
+        text: "حـظ",
         start: 50,
         end: 90
       },

@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/darsi/static/js/runtime~main.472a79be.js"
   },
   {
-    "revision": "e1715789b0987313d4906c3cab6851f2",
+    "revision": "920a18c5e18c23b45528e3d0d365e033",
     "url": "/darsi/index.html"
   }
 ];

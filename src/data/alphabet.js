@@ -212,19 +212,19 @@ const alphabet = [
     reading: "Ra'",
     letter_highlight: {
       first_letter: {
-        text: "ربب",
+        text: "رمل",
         start: 0,
-        end: 40
+        end: 37
       },
       middle_letter: {
-        text: "برب",
-        start: 20,
-        end: 50
+        text: "كـرة",
+        start: 50,
+        end: 73
       },
       last_letter: {
-        text: "ببر",
-        start: 50,
-        end: 90
+        text: "كبيـر",
+        start: 70,
+        end: 100
       },
     },
   },

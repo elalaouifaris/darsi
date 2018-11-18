@@ -419,19 +419,19 @@ const alphabet = [
     reading: "Ghayn",
     letter_highlight: {
       first_letter: {
-        text: "غبب",
+        text: "غـسق",
         start: 0,
         end: 40
       },
       middle_letter: {
-        text: "بغب",
-        start: 20,
-        end: 50
+        text: "لـغـة",
+        start: 30,
+        end: 60
       },
       last_letter: {
-        text: "ببغ",
-        start: 50,
-        end: 90
+        text: "صمــغ",
+        start: 55,
+        end: 100
       },
     },
   },

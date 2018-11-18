@@ -511,19 +511,19 @@ const alphabet = [
     reading: "Lam",
     letter_highlight: {
       first_letter: {
-        text: "لبب",
+        text: "لـبيب",
         start: 0,
-        end: 40
+        end: 20
       },
       middle_letter: {
-        text: "بلب",
-        start: 20,
-        end: 50
+        text: "عـلـم",
+        start: 40,
+        end: 60
       },
       last_letter: {
-        text: "ببل",
-        start: 50,
-        end: 90
+        text: "عـمـل",
+        start: 60,
+        end: 100
       },
     },
   },

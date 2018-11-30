@@ -17,3 +17,7 @@
 * {
   box-sizing: border-box;
 }
+
+.Content {
+  margin-top: 7vh;
+}

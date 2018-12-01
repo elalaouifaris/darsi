@@ -1,0 +1,25 @@
+.Navigation {
+    background-color: var(--prime-color);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.LinkList {
+    color: var(--app-white);
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.LinkItem {
+    padding: 1vh 3vw;
+}
+
+.LinkItem a {
+    text-decoration: none;
+    font-size: 3vh;
+    color: var(--app-white);
+}

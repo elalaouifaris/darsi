@@ -14,10 +14,11 @@
 }
 
 .LinkItem {
-    padding: 1vh 2vw;
+    padding: 1vh 3vw;
 }
 
 .LinkItem a {
     text-decoration: none;
+    font-size: 3vh;
     color: var(--app-white);
 }

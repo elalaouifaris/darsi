@@ -1,0 +1,27 @@
+.SectionList {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 40%;
+    margin: auto;
+
+    list-style: none;
+}
+
+.SectionButton a {
+    background-color: var(--prime-color);
+    max-width: 300px;
+    width: 60vw;
+    height: 5vh;
+    border-radius: 10vh;
+    
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

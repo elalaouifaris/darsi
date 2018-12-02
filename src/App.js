@@ -4,7 +4,7 @@ import style from'./App.module.css';
 
 import Menu from './components/Navigation/Menu/Menu';
 import LandingPage from './components/Navigation/LandingPage/LandingPage';
-import AlphabetGame from './containers/AlphabetGame/AlphabetGame';
+import AlphabetMemoryGame from './containers/AlphabetMemoryGame/AlphabetMemoryGame';
 import AlphabetApp from './containers/AlphabetApp/AlphabetApp';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
           <Menu />
           <div className={ style.Content }>
             <Route path="/" exact component={LandingPage} />
-            <Route path="/game" component={AlphabetGame} />
+            <Route path="/game" component={AlphabetMemoryGame} />
             <Route path="/alphabet" component={AlphabetApp} />
           </div>
         </>

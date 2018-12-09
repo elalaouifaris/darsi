@@ -2,12 +2,17 @@ import React from 'react'
 
 import style from './MemoryCard.module.css';
 
-export default function MemoryCard({ card_data }) {
-  const classes = [style.CardInner, style.Flipped]
+export default function MemoryCard({ card_data, clicked }) {
+  const classes = [
+    style.CardInner, 
+    card_data.flipped
+      ? style.Flipped
+      : null
+  ]
   return (
       <div className={ style.Card }  >
         <div className={ classes.join(' ') }>
-          <div className={ style.CardFront }>
+          <div className={ style.CardFront } onClick={ clicked }>
             { card_data.front_content }
           </div>
 

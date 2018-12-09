@@ -11,4 +11,11 @@ describe('<AlphabetMemoryGame />', () => {
     const wrapper = shallow(<AlphabetMemoryGame />);
     wrapper
   });
+
+  it('Should set the flip_index when flipHandler is called with the corresponding index and first_flip_index is null', () => {
+    const wrapper = shallow(<AlphabetMemoryGame />);
+    const flip_index = 1;
+    wrapper.instance().flipHandler(flip_index);
+    expect(wrapper.state('flip_index')).toEqual(flip_index);
+  });
 });

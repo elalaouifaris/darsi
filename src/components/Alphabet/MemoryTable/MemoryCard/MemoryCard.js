@@ -5,9 +5,8 @@ import style from './MemoryCard.module.css';
 export default function MemoryCard({ card_data, clicked }) {
   const classes = [
     style.CardInner, 
-    card_data.flipped
-      ? style.Flipped
-      : null
+    card_data.flipped ? style.Flipped : null,
+    card_data.pinned ? style.Pinned : null
   ]
   return (
       <div className={ style.Card }  >

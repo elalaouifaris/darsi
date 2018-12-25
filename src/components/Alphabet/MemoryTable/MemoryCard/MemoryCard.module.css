@@ -35,6 +35,12 @@
   transform: rotateY(180deg);
 }
 
+.CardInner.Pinned > .CardBack {
+  color: var(--prime-color);
+  background-color: var(--app-white);
+  border: 2vw solid var(--prime-color);
+}
+
 .CardFront {
   color: var(--app-white);
   background-color: var(--prime-color);
@@ -43,16 +49,12 @@
 
 .CardBack {
   color: var(--prime-color);
-  border: 2vw solid var(--prime-color);
   background-color: var(--app-white);
-  font-size: 10vw;
+  font-size: 12vw;
 
   transform: rotateY(180deg);
 }
 
-.CardDetails:hover {
-  text-decoration: underline;
-}
 
 @media (min-width: 500px) {
   .Card {
@@ -69,7 +71,10 @@
     font-size: 7vw;
   }
   .CardBack {
-    border: 1vw solid var(--prime-color);
-    font-size: 5vw;
+    font-size: 6vw;
   }
+  .CardInner.Pinned > .CardBack {
+    border: 1vw solid var(--prime-color);
+}
+
 }

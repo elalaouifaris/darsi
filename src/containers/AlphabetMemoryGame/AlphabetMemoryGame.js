@@ -12,9 +12,47 @@ const GAMESIZE = 8;
 export class AlphabetMemoryGame extends Component {
   state = {
     cards_list: null,
-    flip_index: null,
-    matched: []
+    flip_index_1: null,
+    flip_index_2: null,
+    show_candidates: false,
+    check_matching: false
   }
+
+  componentDidMount() {
+    this.prepare_game_letters(ALPHABET, GAMESIZE);
+  }
+
+  componentDidUpdate() {
+    if (this.state.show_candidates) {
+      setTimeout(() => {
+        this.setState({
+          show_candidates: false,
+          check_matching: true
+        });
+      }, 1000);
+    } else if (this.state.check_matching) {
+      const index_1 = this.state.flip_index_1;
+      const index_2 = this.state.flip_index_2;
+      const is_matching = this.isMatching(index_1, index_2);
+      if (is_matching) {
+        this.setState(this.matchingFlipUpdate());
+      } else {
+        this.setState(this.notMatchingFlipUpdate());
+      }
+    }
+  }
+
+  render() {
+    return (
+      <>
+        <div className={ style.Title }>Jeu De Mémoire</div>
+        <MemoryTable 
+          card_list={ this.state.cards_list }
+          clickHandler={ this.flipHandler }
+        />
+      </>
+    )
+ }
 
   prepare_game_letters = (array, count) => {
     const sample_letters = _.sampleSize(array, count);
@@ -32,46 +70,29 @@ export class AlphabetMemoryGame extends Component {
     flipped: false,
     pinned: false
   });
-
+  
   flipHandler = index => {
-    if (this.state.flip_index === null){
-      this.setState(prevState => {
-        let cards = [...prevState.cards_list]
-        cards[index].flipped = true;
-        return {
-          cards_list: cards,
-          flip_index: index
-        };
-      });
-    } else {
-      const is_matching = this.isMatching(this.state.flip_index, index);
-      if (is_matching) {
-        this.setState(prevState => {
-          const cards_list = [...prevState.cards_list];
-          cards_list[prevState.flip_index].pinned = true;
-          cards_list[index].flipped = true;
-          cards_list[index].pinned = true;
-          let matched = [...prevState.matched]
-          matched.push(prevState.flip_index);
-          matched.push(index);
-
-          return {
-            cards_list: cards_list,
-            flip_index: null,
-            matched: matched
-          }
-        })
-      } else {
-        this.setState(prevState => {
-          const cards_list = [...prevState.cards_list];
-          cards_list[prevState.flip_index].flipped = false;
-          return { 
-            cards_list: cards_list,
-            flip_index: null
-          }
-        })
-      }
+    const noCardFlipped = ( this.state.flip_index_1 === null );
+    if (noCardFlipped) {
+      this.setState(this.flipUpdate(index, 1));
+    } else if (this.state.flip_index_2 === null) {
+      this.setState(this.flipUpdate(index, 2));
     }
+  }
+
+  flipUpdate(index, flipIndex) {
+    return prevState => {
+      let cards = [...prevState.cards_list];
+      cards[index].flipped = true;
+      let newState = {
+        cards_list: cards
+      };
+      newState['flip_index_' + flipIndex] = index;
+      if (flipIndex === 2) {
+        newState.show_candidates = true;
+      }
+      return newState;
+    };
   }
 
   isMatching(first_index, second_index) {
@@ -80,21 +101,34 @@ export class AlphabetMemoryGame extends Component {
     return (first_card.matching_id === second_card.matching_id);
   } 
 
-  componentDidMount() {
-    this.prepare_game_letters(ALPHABET, GAMESIZE);
+  matchingFlipUpdate() {
+    return prevState => {
+      const cards_list = [...prevState.cards_list];
+      cards_list[prevState.flip_index_1].pinned = true;
+      cards_list[prevState.flip_index_2].pinned = true;
+      return {
+        cards_list: cards_list,
+        flip_index_1: null,
+        flip_index_2: null,
+        check_matching: false
+      };
+    };
   }
 
-  render() {
-    return (
-      <>
-        <div className={ style.Title }>Jeu De Mémoire</div>
-        <MemoryTable 
-          card_list={ this.state.cards_list }
-          clickHandler={ this.flipHandler }
-        />
-      </>
-    )
- }
+  notMatchingFlipUpdate() {
+    return prevState => {
+      const cards_list = [...prevState.cards_list];
+      cards_list[prevState.flip_index_1].flipped = false;
+      cards_list[prevState.flip_index_2].flipped = false;
+      return {
+        cards_list: cards_list,
+        flip_index_1: null,
+        flip_index_2: null,
+        check_matching: false
+      };
+    };
+  }
+
 }
 
 export default AlphabetMemoryGame

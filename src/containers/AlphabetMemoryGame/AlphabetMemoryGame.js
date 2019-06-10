@@ -10,6 +10,7 @@ import Modal from '../../components/UI/Modal/Modal';
 import ModalCard from '../../components/UI/ModalCard/ModalCard';
 
 const GAMESIZE = 8;
+const CARD_FLIP_BACK_DELAY = 1000;
 const INITIAL_STATE = {
   cards_list: [],
   flip_index_1: null,
@@ -33,7 +34,7 @@ export class AlphabetMemoryGame extends Component {
           show_candidates: false,
           check_matching: true
         });
-      }, 1000);
+      }, CARD_FLIP_BACK_DELAY);
     } else if (this.state.check_matching) {
       const index_1 = this.state.flip_index_1;
       const index_2 = this.state.flip_index_2;

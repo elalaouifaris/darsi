@@ -5,6 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import AlphabetMemoryGame from './AlphabetMemoryGame';
 
 configure({adapter: new Adapter()});
+jest.useFakeTimers();
 
 describe('<AlphabetMemoryGame />', () => {
   it('Component renders without errors', () => {
@@ -49,6 +50,18 @@ describe('<AlphabetMemoryGame />', () => {
 
     wrapper.instance().flipHandler(flip_index);
 
-    expect(wrapper.state('show_candidates')).toEqual(true);
+    expect(wrapper.state('show_candidates')).toBeTruthy();
+  });
+
+  it('Should set the show_candidate property to false after double flip and timer is up', () => {
+    const wrapper = shallow(<AlphabetMemoryGame />);
+    const flip_index = 3;
+    wrapper.setState({ flip_index_1: 1 });
+
+    wrapper.instance().flipHandler(flip_index);
+    jest.runAllTimers();
+    wrapper.update();
+
+    expect(wrapper.state('show_candidates')).toBeFalsy();
   });
 });

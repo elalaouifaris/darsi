@@ -46,8 +46,9 @@ describe('<AlphabetMemoryGame />', () => {
     const wrapper = shallow(<AlphabetMemoryGame />);
     const flip_index = 3;
     wrapper.setState({ flip_index_1: 1 });
+
     wrapper.instance().flipHandler(flip_index);
 
-
+    expect(wrapper.state('show_candidates')).toEqual(true);
   });
 });

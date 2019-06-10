@@ -2,20 +2,43 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import AlphabetMemoryGame from './AlphabetMemoryGame';
+import MemoryGame from './MemoryGame';
 
 configure({adapter: new Adapter()});
 jest.useFakeTimers();
 
-describe('<AlphabetMemoryGame />', () => {
+describe('<MemoryGame />', () => {
+  const SAMPLE_CONTENT = [
+    {
+      matching_id: 1,
+      front_content: "D",
+      back_content: "cat"
+    },
+    {
+      matching_id: 1,
+      front_content: "D",
+      back_content: 'dog'
+    },
+    {
+      matching_id: 2,
+      front_content: "D",
+      back_content: "high"
+    },
+    {
+      matching_id: 2,
+      front_content: "D",
+      back_content: "low"
+    }
+  ];
+
   it('Component renders without errors', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     // eslint-disable-next-line no-unused-expressions
     wrapper
   });
 
   it('Should set the flip_index_1 when flipHandler is called with the corresponding index and first_flip_index is null', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     const flip_index = 1;
 
     wrapper.instance().flipHandler(flip_index);
@@ -24,7 +47,7 @@ describe('<AlphabetMemoryGame />', () => {
   });
 
   it('Should set the card at the given index flipped state', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     const flip_index = 1;
 
     wrapper.instance().flipHandler(flip_index);
@@ -34,7 +57,7 @@ describe('<AlphabetMemoryGame />', () => {
   });
 
   it('Should set the flip_index_2 when the flipHandler is called with the corresponding index and flip_index_1 is not null', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     const flip_index = 2;
     wrapper.setState({ flip_index_1: 1 });
 
@@ -44,7 +67,7 @@ describe('<AlphabetMemoryGame />', () => {
   });
 
   it('Should set the show_candidate property to true on the second card flip', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     const flip_index = 3;
     wrapper.setState({ flip_index_1: 1 });
 
@@ -54,7 +77,7 @@ describe('<AlphabetMemoryGame />', () => {
   });
 
   it('Should set the show_candidate property to false after double flip and timer is up', () => {
-    const wrapper = shallow(<AlphabetMemoryGame />);
+    const wrapper = shallow(<MemoryGame content_list={ SAMPLE_CONTENT } />);
     const flip_index = 3;
     wrapper.setState({ flip_index_1: 1 });
 

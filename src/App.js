@@ -4,7 +4,7 @@ import style from'./App.module.css';
 
 import Menu from './components/Navigation/Menu/Menu';
 import LandingPage from './components/Navigation/LandingPage/LandingPage';
-import AlphabetMemoryGame from './containers/AlphabetMemoryGame/AlphabetMemoryGame';
+import AlphabetMemoryGame from './containers/MemoryGame/AlphabetMemoryGame/AlphabetMemoryGame';
 import AlphabetApp from './containers/AlphabetApp/AlphabetApp';
 
 class App extends Component {

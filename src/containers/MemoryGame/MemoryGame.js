@@ -1,15 +1,12 @@
-
 import React, { Component } from 'react'
 import _ from 'lodash';
 
-import style from './AlphabetMemoryGame.module.css';
+import style from './MemoryGame.module.css';
 
-import ALPHABET from '../../data/alphabet';
 import MemoryTable from '../../components/Alphabet/MemoryTable/MemoryTable';
 import Modal from '../../components/UI/Modal/Modal';
 import ModalCard from '../../components/UI/ModalCard/ModalCard';
 
-const GAMESIZE = 8;
 const CARD_FLIP_BACK_DELAY = 1000;
 const INITIAL_STATE = {
   cards_list: [],
@@ -20,11 +17,12 @@ const INITIAL_STATE = {
   pinned_pairs_count: 0,
   is_game_over: false
 };
-export class AlphabetMemoryGame extends Component {
+
+export class MemoryGame extends Component {
   state = INITIAL_STATE
 
   componentDidMount() {
-    this._resetGame();
+    this.resetGame();
   }
 
   componentDidUpdate() {
@@ -50,7 +48,7 @@ export class AlphabetMemoryGame extends Component {
   render() {
     let endGameModal = null;
     if (this.state.is_game_over) {
-      endGameModal = <Modal cancel={ this._resetGame }>
+      endGameModal = <Modal cancel={ this.resetGame }>
                        <ModalCard> Bien Joué</ModalCard>
                      </Modal>
     }
@@ -78,28 +76,23 @@ export class AlphabetMemoryGame extends Component {
     }
   }
 
-  _resetGame = () => {
+  resetGame = () => {
     this.setState(INITIAL_STATE);
-    this._prepare_game_letters(ALPHABET, GAMESIZE);
+    this._prepare_cards();
   };
   
-  _prepare_game_letters = (array, count) => {
-    const sample_letters = _.sampleSize(array, count);
-    const doubled_letters = _.flatMap(sample_letters, elem => [elem, elem]);
-    let game_letters = _.shuffle(doubled_letters);
-    game_letters = game_letters.map(this._format_letter_data);
+  _prepare_cards = () => {
+    const cards = this.props.content_list.map(this._format_card);
+    let game_cards = _.shuffle(cards);
 
-    this.setState({cards_list: game_letters}) 
+    this.setState({cards_list: game_cards}) 
   }
 
-  _format_letter_data = letter_data => ({
-    matching_id: letter_data.index,
-    front_content: "D",
-    back_content: letter_data.isolated_form,
-    flipped: false,
-    pinned: false
-  });
-  
+  _format_card = card => ({
+      ...card,
+      flipped: false,
+      pinned: false
+    })
 
   _flipUpdate = (index, nbSelectedCards) => {
     return prevState => {
@@ -157,4 +150,4 @@ export class AlphabetMemoryGame extends Component {
 
 }
 
-export default AlphabetMemoryGame
+export default MemoryGame

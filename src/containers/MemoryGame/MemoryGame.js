@@ -14,8 +14,7 @@ const INITIAL_STATE = {
   flip_index_2: null,
   show_candidates: false,
   check_matching: false,
-  pinned_pairs_count: 0,
-  is_game_over: false
+  pinned_pairs_count: 0
 };
 
 export class MemoryGame extends Component {
@@ -47,7 +46,9 @@ export class MemoryGame extends Component {
   
   render() {
     let endGameModal = null;
-    if (this.state.is_game_over) {
+    const nb_cards = this.state.cards_list.length;
+    const is_game_over = (this.state.pinned_pairs_count === nb_cards);
+    if (is_game_over) {
       endGameModal = <Modal cancel={ this.resetGame }>
                        <ModalCard> Bien Joué</ModalCard>
                      </Modal>
@@ -118,7 +119,6 @@ export class MemoryGame extends Component {
     return prevState => {
       const cards_list = [...prevState.cards_list];
       const pinned_pairs_count = prevState.pinned_pairs_count + 2;
-      const is_game_over = (pinned_pairs_count === cards_list.length);
 
       cards_list[prevState.flip_index_1].pinned = true;
       cards_list[prevState.flip_index_2].pinned = true;
@@ -128,8 +128,7 @@ export class MemoryGame extends Component {
         flip_index_1: null,
         flip_index_2: null,
         check_matching: false,
-        pinned_pairs_count: pinned_pairs_count,
-        is_game_over: is_game_over
+        pinned_pairs_count: pinned_pairs_count
       };
     };
   }

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://elalaouifaris.github.io/darsi",
   "dependencies": {
+    "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-icons": "^3.2.2",

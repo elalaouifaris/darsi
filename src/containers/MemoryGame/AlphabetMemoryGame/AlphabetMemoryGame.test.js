@@ -2,13 +2,14 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import Menu from './Menu';
+import AlphabetMemoryGame from './AlphabetMemoryGame';
 
 configure({adapter: new Adapter()});
 
-describe('<Menu />', () => {
+describe('<AlphabetMemoryGame />', () => {
   it('Component renders without errors', () => {
-   const wrapper = shallow(<Menu />);
-   wrapper
+    const wrapper = shallow(<AlphabetMemoryGame />);
+    // eslint-disable-next-line no-unused-expressions
+    wrapper
   });
 });

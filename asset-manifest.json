@@ -1,13 +1,13 @@
 {
-  "main.css": "/darsi/static/css/main.433da7d7.chunk.css",
-  "main.js": "/darsi/static/js/main.0c58041e.chunk.js",
-  "main.js.map": "/darsi/static/js/main.0c58041e.chunk.js.map",
-  "static/js/1.49d424ed.chunk.js": "/darsi/static/js/1.49d424ed.chunk.js",
-  "static/js/1.49d424ed.chunk.js.map": "/darsi/static/js/1.49d424ed.chunk.js.map",
+  "main.css": "/darsi/static/css/main.e03ccacd.chunk.css",
+  "main.js": "/darsi/static/js/main.df2b639a.chunk.js",
+  "main.js.map": "/darsi/static/js/main.df2b639a.chunk.js.map",
+  "static/js/1.bc86d825.chunk.js": "/darsi/static/js/1.bc86d825.chunk.js",
+  "static/js/1.bc86d825.chunk.js.map": "/darsi/static/js/1.bc86d825.chunk.js.map",
   "runtime~main.js": "/darsi/static/js/runtime~main.472a79be.js",
   "runtime~main.js.map": "/darsi/static/js/runtime~main.472a79be.js.map",
-  "static/css/main.433da7d7.chunk.css.map": "/darsi/static/css/main.433da7d7.chunk.css.map",
+  "static/css/main.e03ccacd.chunk.css.map": "/darsi/static/css/main.e03ccacd.chunk.css.map",
   "index.html": "/darsi/index.html",
-  "precache-manifest.7f9b9caf28a91d99ae4d29dd3751c2ed.js": "/darsi/precache-manifest.7f9b9caf28a91d99ae4d29dd3751c2ed.js",
+  "precache-manifest.e1558dbc359cce875e12c752d9e5baec.js": "/darsi/precache-manifest.e1558dbc359cce875e12c752d9e5baec.js",
   "service-worker.js": "/darsi/service-worker.js"
 }
